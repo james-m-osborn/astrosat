@@ -1,0 +1,36 @@
+# Target
+# example: Vega J2000
+RA : '18:36:56.6'
+DEC : '+38:47:08.6'
+
+# Date
+year : 2021
+month : 9
+day : 2
+hour : 20
+minute : 00
+seconds : 0
+
+# satellite - only starlink for now
+satArea : 3.14159  # https://www.aanda.org/articles/aa/full_html/2020/04/aa37501-20/aa37501-20.html
+albedo : 0.25
+
+# Observer
+# Durham
+lat : 54.7753
+lon : 1.5849
+alt : 100.
+
+# FoV
+radius : 2.  # degrees
+duration : 1000 #3600  # seconds
+
+# Plots
+Mmin : 0
+Mmax : 10
+plotDir : './plots_field/'
+
+fdir: "./plots"
+TLEdir: "./TLE"
+
+verbose: 1

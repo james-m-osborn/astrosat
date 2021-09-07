@@ -1,0 +1,8 @@
+numpy
+ephem
+astropy
+matplotlib
+astroquery
+tqdm
+scipy
+pyyaml

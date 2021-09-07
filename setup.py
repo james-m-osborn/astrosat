@@ -4,7 +4,7 @@ from distutils.core import setup
 
 
 setup(
-    name='aotools',
+    name='astrosat',
     author='James Osborn',
     author_email='james.osborn@durham.ac.uk, matthew.townson@durham.ac.uk',
     url='https://github.com/james-m-osborn/astrosat',

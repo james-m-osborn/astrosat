@@ -1,1 +1,9 @@
-.DS_Store
+plot/*
+TLE/*
+*.png
+*.dat
+*.gif
+*/__pycache__/*
+__pycache__/
+.idea/
+*.DS_store

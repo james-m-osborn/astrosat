@@ -10,9 +10,7 @@ class Parameters:
         self.parameter_file = parameter_file
         self.parameters_dict = self.load_parameters()
 
-        self.satArea = float(self.parameters_dict['satArea'])
-        self.albedo = float(self.parameters_dict['albedo'])
-        # self.satType = self.parameters_dict['satType']
+        self.cross_section = float(self.parameters_dict['cross_section'])
         self.radius = float(self.parameters_dict['radius'])
         self.duration = float(self.parameters_dict['duration'])
         self.Mmin = float(self.parameters_dict['Mmin'])

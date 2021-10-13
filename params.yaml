@@ -12,8 +12,10 @@ minute : 00
 seconds : 0
 
 # satellite - only starlink for now
-satArea : 3.14159  # https://www.aanda.org/articles/aa/full_html/2020/04/aa37501-20/aa37501-20.html
-albedo : 0.25
+# satArea : 3.14159  # https://www.aanda.org/articles/aa/full_html/2020/04/aa37501-20/aa37501-20.html
+# albedo : 0.25
+# cross_section = area*albedo
+cross_section: 0.075
 
 # Observer
 # Durham

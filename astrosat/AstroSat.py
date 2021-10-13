@@ -50,8 +50,7 @@ class AstroSat:
                     typeTemp = fn.split('_')[1][:-4]
                     if typeTemp == satellite_type:
                         timeTempList.append(timeTemp)
-
-            if len(timeTempList)>=0:
+            if len(timeTempList)>0:
                 if len(timeTempList)==1:
                     # if only one file in archive
                     timeTemp = timeTempList[0]
@@ -69,7 +68,7 @@ class AstroSat:
                     # read TLE for file
                     fn = '%i_%s.dat' % (timeTemp,satellite_type)
                     if self.parameters.verbose:
-                        print('Loading TLE from file: %s'%fn)
+                        print('Loading TLE:%s from file: %s'%(satellite_type,fn))
                     satTLEs = []
                     with open(self.parameters.TLEdir+'/'+fn,'r') as f:
                         for line in f:
@@ -82,7 +81,7 @@ class AstroSat:
         # download and archive new TLEs
         if forceNew == 1:
             if self.parameters.verbose:
-                print('Downloading TLEs')
+                print('Downloading TLE:%s'%satellite_type)
 
             TLE_URL = 'https://www.celestrak.com/NORAD/elements/%s.txt'%(satellite_type)
             TLEs = urlopen(TLE_URL)

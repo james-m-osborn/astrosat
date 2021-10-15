@@ -3,6 +3,9 @@
 Astrosat is a Python package which calculates which satellites can be seen by a given observer in a given field of view at a given observation time and observation duration.
 This includes the geometry of the satellite and observer but also estimates the expected apparent brightness of the satellite to aid astronomers in assessing the impact on their observations.
 
+Full documentation can be found [here](https://james-m-osborn.github.io/astrosat/).
+A summary of installation and simple usage is given below.
+
 ## Installation
 ### PyPI
 Astrosat is available on the Python Package Index - [PyPI](https://pypi.org/project/astrosat/) and can be installed using:

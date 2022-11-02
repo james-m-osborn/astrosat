@@ -339,7 +339,7 @@ class AstroSat:
             #  
             if self.parameters.verbose:
                 print('Using Bright Star Catalogue')
-            with open("astroSat/data/bsc.dat",'r') as f:     
+            with open(os.path.dirname(__file__)+"/data/bsc.dat",'r') as f:     
                 for line in f:
                     # Loop through the Yale Bright Star Catalog, line by line
                     # Ignore blank lines and comment lines
